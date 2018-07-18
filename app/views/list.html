@@ -1,0 +1,23 @@
+<div class="container">
+    
+    <div class="row">
+    <h5>Heroe Name</h5>
+    <input name="" value="name"  ng-model="name">
+    <button ng-click="list.addHeroe(name)">Add</button>
+    </div>
+    <div class="row">
+        
+        <div class="col-md-12" ng-repeat="item in list.heroe">
+          <a class="btn btn-primary names" ui-sref='details' ng-click="list.saveHeroe(item)">{{item.id}}<span> {{item.name}}</span></a> <span  class="remove btn btn-danger" ng-click="list.removeHeroe(item)">X</span>
+        
+        
+        
+        </div>
+    
+    
+    
+    
+    </div>
+
+
+</div>
